@@ -1,0 +1,33 @@
+{
+  "name": "@task-manager/frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development vite dev",
+    "build": "cross-env NODE_ENV=production vite build",
+    "eslint": "eslint ./src"
+  },
+  "dependencies": {
+    "@json2csv/plainjs": "^7.0.6",
+    "@vanilla-extract/css": "1.17.4",
+    "classnames": "^2.3.2",
+    "mobx": "6.13.1",
+    "mobx-react-lite": "4.0.7",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@vanilla-extract/css-utils": "0.1.6",
+    "@vanilla-extract/dynamic": "2.1.5",
+    "@vanilla-extract/vite-plugin": "4.0.20",
+    "@vitejs/plugin-react-swc": "3.7.0",
+    "typescript": "5.8.2",
+    "vite": "5.4.19",
+    "vite-plugin-svgr": "4.3.0",
+    "vite-tsconfig-paths": "5.1.4"
+  }
+}
