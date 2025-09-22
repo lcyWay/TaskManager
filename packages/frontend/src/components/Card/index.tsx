@@ -3,21 +3,22 @@ import cn from "classnames";
 
 import CustomIcon from "primitives/CustomIcon";
 
-import { cardHintStyles, cardSelectedStyles, cardStyles } from "./style.css";
+import { cardRightSideStyles, cardSelectedStyles, cardStyles } from "./style.css";
 
 interface CardInterface {
   icon: React.ReactNode;
   title: string;
   selected?: boolean;
-  hint?: string;
+  rightContent?: React.ReactNode;
+  onClick?: () => void;
 }
 
-function Card({ icon, title, selected, hint }: CardInterface) {
+function Card({ icon, title, selected, rightContent, onClick }: CardInterface) {
   return (
-    <div className={cn(cardStyles, selected && cardSelectedStyles)}>
+    <div className={cn(cardStyles, selected && cardSelectedStyles)} onClick={onClick}>
       <CustomIcon size="small" icon={icon} />
       {title}
-      {hint && <div className={cardHintStyles}>{hint}</div>}
+      {rightContent && <div className={cardRightSideStyles}>{rightContent}</div>}
     </div>
   );
 }

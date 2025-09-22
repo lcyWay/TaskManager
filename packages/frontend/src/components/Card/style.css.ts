@@ -5,9 +5,11 @@ import { globalTheme } from "styles/theme.css";
 export const cardStyles = style({
   display: "flex",
   alignItems: "center",
-  borderRadius: 12,
-  height: 40,
   gap: 8,
+  height: 44,
+  width: "100%",
+  boxSizing: "border-box",
+  borderRadius: 12,
   padding: "0 14px",
   cursor: "pointer",
   border: "2px solid transparent",
@@ -20,10 +22,9 @@ export const cardSelectedStyles = style({
   border: `2px solid ${globalTheme.palette.primary}`,
 });
 
-export const cardHintStyles = style({
+export const cardRightSideStyles = style({
   marginLeft: "auto",
-  fontSize: globalTheme.fontSizes.tiny,
-  lineHeight: globalTheme.lineHeights.tiny,
-  color: globalTheme.colors.hint,
-  letterSpacing: globalTheme.letterSpacing,
+  display: "flex",
+  alignItems: "center",
+  gap: 8,
 });

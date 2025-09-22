@@ -23,3 +23,10 @@ export const sidebarBlockTitleStyles = style({
   color: globalTheme.colors.hint,
   letterSpacing: globalTheme.letterSpacing,
 });
+
+export const cardHintStyles = style({
+  fontSize: globalTheme.fontSizes.tiny,
+  lineHeight: globalTheme.lineHeights.tiny,
+  color: globalTheme.colors.hint,
+  letterSpacing: globalTheme.letterSpacing,
+});

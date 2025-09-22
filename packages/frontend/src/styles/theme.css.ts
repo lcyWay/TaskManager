@@ -26,6 +26,7 @@ export const lightTheme = {
   palette: {
     primary: "#7497F1",
     hint: "#EBEDF4",
+    error: "#F17474",
     background: "#FFFFFF",
     backgroundDark: "#F4F5F9",
   },
